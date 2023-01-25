@@ -1,3 +1,9 @@
+# prevent ai empires from researching the initial habitats tech. void dwellers
+# and knights of the toxic god are exempted from this restriction
+
+# the goal is to avoid a lategame filled with construction ships spamming
+# habitats that only serve to increase pop growth
+
 tech_habitat_1 = {
 	cost = @tier3cost2
 	area = engineering
@@ -10,10 +16,12 @@ tech_habitat_1 = {
 		OR = {
 				is_ai = no
 				has_origin = origin_void_dwellers
+        has origin = origin_toxic_knights
 		}
 		OR = {
 				host_has_dlc = "Utopia"
 				has_origin = origin_void_dwellers
+        has_origin = origin_toxic_knights
 		}
 }	
 

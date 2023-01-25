@@ -1,3 +1,9 @@
+# prevent ai empires from researching the gateway construction tech. doorstep
+# empires are exempted
+
+# the goal is to avoid a lategame filled with construction ships spamming
+# gateways that add lag from additional pathfinding overheard
+
 tech_gateway_construction = {
 	cost = @tier5cost3
 	area = physics
